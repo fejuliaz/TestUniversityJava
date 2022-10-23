@@ -21,7 +21,7 @@ public class BM_AM_OrangeHRM {
 
   }
 
-  @Test
+  @Test (priority = 1)
   public void signIn (){
     WebElement textUsername = driver.findElement(By.id("txtUsername"));
     Highlighter.highlightElement(driver, textUsername);
@@ -40,7 +40,7 @@ public class BM_AM_OrangeHRM {
 
   }
 
-  @Test
+  @Test (priority = 2)
   public void userSearch (){
     WebElement menuAdmin = driver.findElement(By.id("menu_admin_viewAdminModule"));
     Highlighter.highlightElement(driver, menuAdmin);
@@ -58,7 +58,7 @@ public class BM_AM_OrangeHRM {
 
   }
 
-  @Test
+  @Test (priority = 3)
   public void userSignOut (){
     WebElement linkWelcome = driver.findElement(By.id("welcome"));
     Highlighter.highlightElement(driver, linkWelcome);
